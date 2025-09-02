@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 32px 0 163px 42px;
+
+}
+
+.link-header {
+    margin-right: 32px;
+    font-size: 14px;
+    font-weight: 400px;
+    letter-spacing: 0.9px;
+    color: #17233D;
+    cursor: pointer;
+    text-align: center;
+}
+
+button {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border: 1px solid #4CB538;
+    background: #6FBF44;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo-image {
+    margin-left: 182px;
+    display: inline-block;
+
+}
+
+section {
+    display: inline-block;
+    margin-left: 97px;
+    width: 493px;
+}
+
+h1 {
+
+    font-size: 62px;
+    font-weight: 700px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    color: #161A49;
+}
+
+p {
+
+    color: #4B505A;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    margin-top: 47px;
+    margin-bottom: 45px;
+}
+
+.link-section {
+    font-size: 18px;
+    color: #6FBF44;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+/* Para telas maiores */
+@media (max-width: 751px) {
+    .item:nth-child(1) {
+        grid-column: 1;
+        /* Item 1 na primeira coluna */
+    }
+
+    .item:nth-child(2) {
+        grid-column: 1;
+        /* Item 2 na primeira coluna */
+    }
+
+    .item:nth-child(3) {
+        grid-column: 1;
+        /* Item 3 na primeira coluna */
+    }
+
+    .imagem {
+        grid-column: 1;
+        /* A imagem na primeira coluna */
+        order: 4;
+        /* A imagem será a última */
+    }
+}
+
+/* Para telas menores*/
+@media screen and (max-width:750px) {
+    .link-header {
+        display: none;
+        
+    }
+
+    button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 91px;
+        height: 31px;
+        font-size: 12px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .logo-image {
+        grid-column: 1;
+        width: 312px;
+        height: 288px;
+        margin: 15px auto;
+        text-align: center;
+        justify-items: center;
+        margin: 0 70px auto;
+        
+        /* A imagem na primeira coluna */
+    }
+
+    .item:nth-child(1) {
+        order: 1;
+        /* Item 1 será o primeiro */
+    }
+
+    .item:nth-child(2) {
+        order: 2;
+        /* Item 2 será o segundo */
+    }
+
+    .item:nth-child(3) {
+        order: 3;
+        /* Item 3 será o terceiro */
+    }
+
+    h1 {
+        width: 278px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        justify-content: center;
+        
+
+    }
+
+    p {
+        width: 304px;
+        font-size: 18px;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .link-section {
+        margin-left: 75px;
+        justify-items: center;
+    }
+
+    
+
+}
